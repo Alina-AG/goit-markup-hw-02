@@ -28,6 +28,9 @@ body {
 .logo-studio {
     color: var(--primary-text-color);
 }
+.logo-studio-footer {
+    color: #F4F4FD;
+}
 .subheader {
     font-weight: 700;
     font-size: 36px;
