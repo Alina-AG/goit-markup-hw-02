@@ -1,6 +1,7 @@
 :root{
     --primary-text-color: #2E2F42;
     --secondary-text-color:#4D5AE5;
+    --adr-color:#434455;
 }
 
 .list {
@@ -40,7 +41,8 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-text-color);
-}sub-subheader {
+}
+.sub-subheader {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -68,7 +70,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
-.menu-link:hoder,
+.menu-link:hover,
 .menu-link:focus {
     color: #404bbf;
 }
@@ -81,8 +83,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--adr-color);
 }
- 
+    .contacts-phone:hover,
+    .contacts-email:hover,
+    .contacts-phone:focus,
+    .contacts-email:focus{
+    color: #404bbf
+}
 /*===========================/Header===========================*/
 
 /*===========================Hero===========================*/
