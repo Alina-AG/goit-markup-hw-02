@@ -1,0 +1,126 @@
+:root{
+    --primary-text-color: #2E2F42;
+    --secondary-text-color:#4D5AE5;
+}
+
+.list {
+    list-style: none;
+}
+.link {
+text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*===========================Components===========================*/
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.logo-web {
+    color: var(--secondary-text-color);
+}
+.h2-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}h2-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/*===========================/Components===========================*/
+
+/*===========================Header===========================*/
+/* .page-header {
+    background: var(--primary-text-color);
+} */
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.contacts{
+    font-style: normal;
+}
+.contacts-phone,
+.contacts-email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+ 
+/*===========================/Header===========================*/
+
+/*===========================Hero===========================*/
+
+.main-header {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.order-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    background: var(--secondary-text-color);
+    color: #FFFFFF;
+}
+/*===========================/Hero===========================*/
+
+/*===========================Footer===========================*/
+
+.footer-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
+/*===========================/Footer===========================*/
+
+/*===========================Portfolio===========================*/
+
+.portfolio-menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+}
+.portfolio-menu-link:hover,
+.portfolio-menu-link:focus {
+    color: #FFFFFF;
+}
+/*===========================Portfolio===========================*/
