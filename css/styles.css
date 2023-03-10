@@ -1,7 +1,15 @@
 :root{
-    --primary-text-color: #2E2F42;
-    --secondary-text-color:#4D5AE5;
-    --adr-color:#434455;
+    --primary-brand:#4D5AE5;
+    --pressed-state:#404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #f4f4fd;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
+    --white-background: #fff;
 }
 
 .list {
@@ -12,7 +20,8 @@ text-decoration: none;
 }
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
+    color: var(--text);
+    background: var(--white-background);
 }
 
 /*===========================Components===========================*/
@@ -24,44 +33,42 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--secondary-text-color);
+    color: var(--primary-brand);
 }
 .logo-studio {
-    color: var(--primary-text-color);
+    color: var(--dark);
 }
 .logo-studio-footer {
-    color: #F4F4FD;
+    color: var(--light);
 }
 
 .subheader {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--primary-text-color);
+    color: var(--dark);
 }
 .sub-subheader {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--dark);
 }
 .descr {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--adr-color);
+    color: var(--text);
 }
 
 /*===========================/Components===========================*/
 
 /*===========================Header===========================*/
 /* .page-header {
-    background: var(--primary-text-color);
+    background: var(--dark);
 } */
 
 .menu-link {
@@ -69,17 +76,16 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--dark);
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: #404bbf;
+    color: var(--pressed-state);
 }
 .contacts{
     font-style: normal;
 }
 .contacts-link {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -87,22 +93,21 @@ body {
 }
     .contacts-link:hover,
     .contacts-link:focus{
-    color: #404bbf
+    color: var(--pressed-state);
 }
 /*===========================/Header===========================*/
 
 /*===========================Hero===========================*/
 
 .hero {
-    background-color: #2e2f42;
+    background-color: var(--dark);
 }
 .main-header {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-background);
 }
 .order-btn {
     font-family: "Roboto", sans-serif;
@@ -111,23 +116,36 @@ body {
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
-    background: var(--secondary-text-color);
-    color: #FFFFFF;
+    background: var(--primary-brand);
+    color: var(--white-background);
     cursor: pointer;
 }
+.order-btn:hover,
+.order-btn:focus {
+    background: var(--pressed-state);
+}
 /*===========================/Hero===========================*/
+
+/*===========================Our Team===========================*/
+
+.team {
+    background: var(--light);
+}
+.team-list-item{
+    background: var(--white-background);
+}
+/*===========================/Our Team===========================*/
 
 /*===========================Footer===========================*/
 
 .footer {
-    background-color: var(--primary-text-color);
+    background-color: var(--dark);
 }
 .footer-descr {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: var(--light);
 }
 /*===========================/Footer===========================*/
 
@@ -139,11 +157,20 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--secondary-text-color);
+    color: var(--primary-brand);
+    background: var(--light);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
     cursor: pointer;
 }
-.portfolio-menu-link:hover,
-.portfolio-menu-link:focus {
-    color: #FFFFFF;
+.portfolio-menu-btn:hover,
+.portfolio-menu-btn:focus {
+    color: var(--white-background);
+    background: var(--pressed-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.portfolio-list-item {
+    border: 1px solid var(--accent)
+}
+
 /*===========================Portfolio===========================*/
