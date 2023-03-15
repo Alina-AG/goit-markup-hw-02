@@ -9,22 +9,32 @@
     --light: #f4f4fd;
     --modal-overlay: #2E2F42;
     --hero-background: #2E2F42;
-    --white-background: #fff;
+    --white-background: #ffffff;
 }
-
-.list {
-    list-style: none;
-}
-.link {
-text-decoration: none;
+html {
+    box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
     background: var(--white-background);
 }
+h1, h2, h3, p {
+    margin-top: 0;
+}
+img {
+    display: block;
+}
+.list {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+}
 
-/*===========================Components===========================*/
+.link {
+    text-decoration: none;
+}
+/*=========================Components=========================*/
 
 .logo-link {
     font-family: 'Raleway', sans-serif;
@@ -38,11 +48,11 @@ body {
 .logo-studio {
     color: var(--dark);
 }
-.logo-studio-footer {
+.footer .logo-studio {
     color: var(--light);
 }
 
-.subheader {
+.title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -50,7 +60,7 @@ body {
     text-transform: capitalize;
     color: var(--dark);
 }
-.sub-subheader {
+.subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -58,51 +68,41 @@ body {
     color: var(--dark);
 }
 .descr {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
 }
 
-/*===========================/Components===========================*/
+/*=========================/Components========================*/
 
 /*===========================Header===========================*/
-/* .page-header {
-    background: var(--dark);
-} */
 
-.menu-link {
-    font-weight: 500;
-    font-size: 16px;
+header a {
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.menu a {
+    font-weight: 500;
     color: var(--dark);
 }
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--pressed-state);
-}
-.contacts{
-    font-style: normal;
-}
-.contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.contacts a {
     color: var(--adr-color);
 }
-    .contacts-link:hover,
-    .contacts-link:focus{
+header a:not(.logo-link):hover,
+header a:not(.logo-link):focus {
     color: var(--pressed-state);
+}
+.contacts {
+    font-style: normal;
 }
 /*===========================/Header===========================*/
 
-/*===========================Hero===========================*/
+/*============================Hero=============================*/
 
 .hero {
     background-color: var(--dark);
 }
-.main-header {
+.hero-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -110,9 +110,8 @@ body {
     color: var(--white-background);
 }
 .order-btn {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
@@ -126,12 +125,12 @@ body {
 }
 /*===========================/Hero===========================*/
 
-/*===========================Our Team===========================*/
+/*=========================Our Team==========================*/
 
 .team {
     background: var(--light);
 }
-.team-list-item{
+.team li {
     background: var(--white-background);
 }
 /*===========================/Our Team===========================*/
@@ -141,10 +140,8 @@ body {
 .footer {
     background-color: var(--dark);
 }
-.footer-descr {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.footer .descr {
+    
     color: var(--light);
 }
 /*===========================/Footer===========================*/
@@ -152,7 +149,6 @@ body {
 /*===========================Portfolio===========================*/
 
 .portfolio-menu-btn {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
